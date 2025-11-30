@@ -1,9 +1,9 @@
 import zmq
 
 def main():
-    """Connect to Introspection Microservice and send sample category requests."""
+    """Connect to Celebration Microservice and send sample category requests."""
 
-    # set up zmq context and request socket, connect to Introspection Microservice endpoint
+    # set up zmq context and request socket, connect to Celebration Microservice endpoint
     context = zmq.Context()
     socket = context.socket(zmq.REQ)
     socket.connect("tcp://localhost:5558")
