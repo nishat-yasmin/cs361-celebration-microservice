@@ -15,16 +15,16 @@ celebration_messages = [
 
 celebration_visuals = [
     r"""
-     ⊂_ヽ
-        ＼＼  
+     ⊂_ヽ         
+        ＼＼     
             ＼( •_•)  F
-             /  ⌒  A
+             /  ⌒    A
             /  /\\  B
-           /  /  \\  U
+           /  /  \\   U
           L___)   ＼_つ L
-          /  /       0
-         /  /      U
-        ( ( \    S
+          /  /        0
+         /  /       U
+        ( ( \     S
          | \ \
          | /` \
          ||   \ )
@@ -58,7 +58,7 @@ def get_celebration():
     """Returns a combined celebratory message and visual."""
     message = random.choice(celebration_messages)
     visual = random.choice(celebration_visuals)
-    return f"{message}\n{visual}"
+    return f"{message}{visual}"
 
 def main():
     """Sets up and runs Celebration Service."""
